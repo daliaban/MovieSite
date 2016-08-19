@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Movie Site</title>
+</head>
+<body ng-app="movieSite">
+<div class="maincontainer">
+    <header>
+        <div id="burger" class="pull-right">
+            <a href="#main"><img src="images/icons/ic_burger.png"></a>
+        </div>
+        <div id="logo">
+            <a href="#index"><img src="images/icons/logo_header.png"></a>
+        </div>
+    </header>
+    <div class="container" ui-view></div>
+    <footer>
+        <div id="footerlogo">
+            <img src="images/icons/logo_footer.png">
+        </div>
+    </footer>
+</div>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="app.js"></script>
+<script src="scripts/mainController.js"></script>
+<script src="scripts/contentProvider.js"></script>
+<script src="scripts/episodeController.js"></script>
+<script src="scripts/backgroundImgDirective.js"></script>
+<script src="scripts/indexController.js"></script>
+</body>
+</html>

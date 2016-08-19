@@ -1,0 +1,33 @@
+
+    <div class="modal-header">
+        <span class="pull-right"><img ng-click="cancel()" src="images/icons/ic_close.png"> </span>
+        <div back-img="images/tvshows/{{movie.img}}" ></div>
+    </div>
+    <div class="modal-body">
+        <span>{{movie.descr}}</span>
+        <div ng-repeat="item in episodes">
+            <div class="episoderow">
+                <div class="col-30" style="position: relative; left: 0; top: 0;">
+                    <a href="#"><img style="position: relative; top: 0; left: 0;" class="promoimg" ng-src="images/episodes/{{item.img}}"></a>
+                    <img style="position: absolute; top: 15px; left: 70px;" ng-src="images/icons/ic_play.png">
+                </div>
+                <div class="col-70">
+                    <div class="episodeinfo">
+                        <div class="episodename">
+                            <span>{{item.name}}</span>
+                        </div>
+                        <span class="pull-right" ng-show="down" ng-click="down = false"><img src="images/icons/ic_drop_down.png"></span>
+                        <span class="pull-right" ng-show="!down" ng-click="down = true"><img src="images/icons/ic_drop_down.png"></span>
+
+                        <div class="episoderun">
+                            <span class="col-30">{{item.name}}</span>
+                            <span class="col-30">{{item.time}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episodedescr" ng-show="!down">
+                <span>{{item.descr}}</span>
+            </div>
+        </div>
+    </div>

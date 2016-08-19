@@ -1,0 +1,47 @@
+<span class="tv">TV</span>
+<div class="table">
+    <div ng-repeat="item in datalist">
+        <div class="row" ng-if="$even">
+            <div class="col">
+                <div class="movcon left">
+                    <div class="col-30">
+                        <a ng-click="showEpisodes($index)" href="#"><img class="promoimg" ng-src="images/tvshows/{{datalist[$index].img}}"></a>
+                    </div>
+                    <div class="col-70">
+                        <div class="movinfo">
+                            <div class="name">
+                                <a ng-click="showEpisodes($index)" href="#"><span>{{datalist[$index].name}}</span></a>
+                            </div>
+                            <div class="episodes">
+                                <span class="col-30">{{datalist[$index].episodes}} Episodes</span>
+                                <span class="col-30">{{datalist[$index].rating}}</span>
+                                <span class="col-30">{{datalist[$index].year}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="movcon right">
+                    <div class="col-30">
+                        <a ng-click="showEpisodes($index+1)" href="#"><img class="promoimg" ng-src="images/tvshows/{{datalist[$index + 1].img}}"></a>
+                    </div>
+                    <div class="col-70">
+                        <div class="movinfo">
+                            <div class="name">
+                                <a ng-click="showEpisodes($index+1)" href="#"><span>{{datalist[$index + 1].name}}</span></a>
+                            </div>
+                            <div class="episodes">
+                                <span class="col-30">{{datalist[$index + 1].episodes}} Episodes</span>
+                                <span class="col-30">{{datalist[$index + 1].rating}}</span>
+                                <span class="col-30">{{datalist[$index + 1].year}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
