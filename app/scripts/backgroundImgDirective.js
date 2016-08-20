@@ -10,8 +10,9 @@ angular.module('movieSite')
             element.css({
                 'height': '100%',
                 'background-image': 'url(' + url +')',
-                'background-size' : 'contain',
-                'background-repeat': 'repeat-x'
+                'background-size' : 'cover',
+				'text-align': 'center',
+				'padding-top': '30%',
             });
         };
 });

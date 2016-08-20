@@ -5,10 +5,10 @@
 
 angular.module('movieSite', ['ui.router', 'ui.bootstrap'])
     .config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/main');
+        $urlRouterProvider.otherwise('/index');
 
-        $stateProvider.state('main', {
-            url: '/main',
+        $stateProvider.state('tvshows', {
+            url: '/tvshows',
             templateUrl: '../view/main-section.html',
             controller: 'mainCtrl'
         }).state('index', {

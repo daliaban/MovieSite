@@ -9,7 +9,8 @@ angular.module('movieSite')
         $scope.down = true;
         $scope.movie = item;
         var episodes = data.getEpisodes(item.id);
-
+		$scope.bannerimg = episodes[0].bannerimg;
+	
         $scope.episodes = episodes[0].episodes;
         $scope.cancel = function(){
             $uibModalInstance.dismiss('cancel');

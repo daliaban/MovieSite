@@ -19,9 +19,5 @@ angular.module('movieSite')
                     }
                 }
             });
-            modalInstance.result.then(function (feedBack){
-                //I intend to implement the emailing functionality with node - express.js in future version
-            });
-
         }
     });

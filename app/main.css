@@ -30,6 +30,10 @@ html, body {
     width:100%;
 }
 
+.index {
+	height: 250px;
+}
+
 .col {
     float: left;
     min-height: 1px;
@@ -160,8 +164,13 @@ a {
 }
 
 .modal-body {
-    height: 70%;
-    overflow-y: scroll;
+    height: 50%;
+}
+
+.listepisodes {
+	padding-top: 10px;
+	height:85%;
+	overflow-y: scroll;
     overflow-x: hidden;
 }
 .modal-content {
@@ -169,8 +178,14 @@ a {
 }
 
 .modal-header {
-    height: 30%;
+    height: 50%;
     padding: 0;
+}
+
+.carousel-inner img {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media all and (max-width:650px){
