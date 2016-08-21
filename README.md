@@ -9,6 +9,8 @@ Then run 'Grunt serve' to run the connect server. The application would be hoste
 
 The first page (#/index) represents an index page with carousel. The carousel has been done using Bootstrap.
 
+Clicking on the main logo takes user to index page.
+
 When clicked on the top right hand 'burger' icon, it takes to the tvshows page (#/tvshows).
 
 When clicked on a TV show title, it shows the list of episodes. This modal window has been created using ui-bootstrap library.

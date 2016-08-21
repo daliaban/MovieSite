@@ -2,7 +2,7 @@
     <div class="modal-header">
         <span class="pull-right"><img ng-click="cancel()" src="images/icons/ic_close.png" alt="close window"> </span>
         <div back-img="images/index/{{bannerimg}}" style="border-bottom-left-radius: 5%; border-bottom-right-radius: 5%;">
-			<span style="font-size: 1.5em; color: greenyellow;">{{movie.name}}</span>
+			<span class="bannername" style="">{{movie.name}}</span>
 			<div>
 				<span style="color: white">{{movie.episodes}} Episodes</span>&nbsp;&nbsp;
 				<span style="color: white">{{movie.rating}}</span>&nbsp;&nbsp;
@@ -17,7 +17,7 @@
 				<div class="episoderow">
 					<div class="col-30" style="position: relative; left: 0; top: 0;">
 						<a href="#"><img style="position: relative; top: 0; left: 0;" class="promoimg" ng-src="images/episodes/{{item.img}}" alt="episode image"></a>
-						<img style="position: absolute; top: 15px; left: 70px;" ng-src="images/icons/ic_play.png">
+						<img class="episodeplayimg" ng-src="images/icons/ic_play.png">
 					</div>
 					<div class="col-70">
 						<div class="episodeinfo">

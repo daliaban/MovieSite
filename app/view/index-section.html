@@ -33,17 +33,19 @@
 			<div ng-repeat="item in datalist">
 				<div class="row index" ng-if="$even">
 					<div class="col">
-						<div back-img="images/index/{{datalist[$index].img}}" style="border-radius: 2%;">
-							<span style="font-size: 1.5em; color: white;">{{datalist[$index].name}}</span>
+						<div class="bkgimg" back-img="images/index/{{datalist[$index].img}}">
 							<div>
+								<span style="font-size: 1.5em; color: white;">{{datalist[$index].name}}</span>
+								<br/>
 								<span style="color: white">{{datalist[$index].descr}}</span>
 							</div>	
 						</div>
 					</div>
 					<div class="col">
-						<div back-img="images/index/{{datalist[$index+1].img}}" style="border-radius: 2%;">
-							<span style="font-size: 1.5em; color: white;">{{datalist[$index+1].name}}</span>
+						<div class="bkgimg" back-img="images/index/{{datalist[$index+1].img}}">
 							<div>
+								<span style="font-size: 1.5em; color: white;">{{datalist[$index+1].name}}</span>
+								<br/>
 								<span style="color: white">{{datalist[$index+1].descr}}</span>
 							</div>	
 						</div>

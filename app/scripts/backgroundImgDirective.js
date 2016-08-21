@@ -12,7 +12,7 @@ angular.module('movieSite')
                 'background-image': 'url(' + url +')',
                 'background-size' : 'cover',
 				'text-align': 'center',
-				'padding-top': '30%',
+				'padding-top': '160px'
             });
         };
 });

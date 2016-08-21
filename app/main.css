@@ -72,13 +72,18 @@ footer {
     background-color: lightgray;
 }
 
+#footerlogo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 #logo {
     padding: 30px 0 20px 0;
 }
 
 #burger{
     padding-top: 30px;
-    padding-right: 5px;
+    padding-right: 15px;
 }
 .pull-right {
     float: right;
@@ -91,7 +96,7 @@ footer {
 
 .movcon {
     background-color: white;
-    border-radius: 2%;
+    border-radius: 25px;
     height:100%;
 }
 .movcon.left {
@@ -113,7 +118,7 @@ footer {
 .name{
     font-weight: bold;
     font-size: 1.75em;
-    font-family: Verdana, Arial, Helvetica, sans-serif;;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 .episodes {
@@ -127,7 +132,11 @@ footer {
 .promoimg {
     height:100%;
     width:100%;
-    border-radius: 2%;
+}
+
+.movcon .promoimg {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 a {
@@ -138,7 +147,7 @@ a {
 .episoderow {
     height: 80px;
     width: 95%;
-    margin: 30px;
+    margin: 12px auto;
     border-top: 1px solid gray;
     padding-top: 10px;
 }
@@ -159,12 +168,18 @@ a {
 }
 
 .episodedescr {
-   width: 95%;
+    width: 95%;
     padding-left: 20px;
 }
 
+.episodeplayimg {
+    position: absolute;
+    top: 15px;
+    left: 70px;
+}
+
 .modal-body {
-    height: 50%;
+    height: 55%;
 }
 
 .listepisodes {
@@ -178,7 +193,7 @@ a {
 }
 
 .modal-header {
-    height: 50%;
+    height: 45%;
     padding: 0;
 }
 
@@ -186,6 +201,15 @@ a {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.bkgimg {
+    border-radius: 25px;
+}
+
+.bannername{
+    font-size: 1.5em;
+    color: greenyellow;
 }
 
 @media all and (max-width:650px){
@@ -198,5 +222,23 @@ a {
 
     .movcon.right {
         margin-right: 0;
+    }
+    
+    .name{
+        font-size: 1em;
+    }
+    .episoderow {
+        height: 60px;
+    }
+    .episodeplayimg {
+        position: absolute;
+        top: 6px;
+        left: 30px;
+    }
+    .modal-content {
+        height: 450px;
+    }
+    .bannername{
+        font-size: 1em;
     }
 }
