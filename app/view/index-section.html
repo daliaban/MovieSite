@@ -1,6 +1,8 @@
 <div>
 	<div class="caraousel">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+            <div class="carouselbkg"></div>
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
 				<li ng-repeat="item in carousel" data-target="#carousel-example-generic" data-slide-to="{{$index}}" ng-class="{active: $index == 0}"></li>
@@ -9,7 +11,7 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div ng-repeat="item in carousel" ng-class="$index == 0? 'item active' : 'item'">
-					<img ng-src="images/carrousel/{{item.img}}" alt="carousel image" style="width:50%;height:50%">
+					<img ng-src="images/carrousel/{{item.img}}" alt="carousel image" style="width:50%;height:50%; border-radius: 75%/0 0 100px 100px;">
 					<div class="carousel-caption">
 						<span style="font-size: 1.5em; color: white;">{{item.name}}</span><br/>
 						<span style="color: skyblue">{{item.descr}}</span>

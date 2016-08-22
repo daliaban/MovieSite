@@ -212,6 +212,18 @@ a {
     color: greenyellow;
 }
 
+.carouselbkg {
+    background-image: url('images/carrousel/img_carroussel_2.png');
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-filter: blur(13px);
+    -moz-filter: blur(13px);
+    -o-filter: blur(13px);
+    -ms-filter: blur(13px);
+    filter: blur(13px);
+}
+
 @media all and (max-width:650px){
     .col {
         width: 100%;
